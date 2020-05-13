@@ -8,7 +8,7 @@ declare function isDate (val): boolean
 declare function isSymbol (val): boolean
 
 declare function deepCompare (ref, val): boolean
-declare function omit (val: object | any[], useless: string | number | Array<string | number>): object | any[]
+declare function omit (val: { [key: string]: any } | any[], useless: string | number | Array<string | number>): { [key: string]: any } | any[]
 
 export {
   isNum,
