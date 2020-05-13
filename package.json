@@ -1,0 +1,17 @@
+{
+  "name": "@asahip/utils",
+  "version": "0.0.1",
+  "description": "Common personal utils",
+  "main": "main.js",
+  "repository": "https://github.com/asahiP/Navy.git",
+  "author": "Luke Pan <asahi0749@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "files": [
+    "LICENSE",
+    "main.d.ts",
+    "main.js",
+    "package.json",
+    "README.md"
+  ]
+}
