@@ -1,16 +1,15 @@
 {
   "name": "@asahi/utils",
-  "version": "0.0.2",
-  "description": "Common personal utils",
-  "main": "main.js",
+  "version": "1.0.0",
+  "description": "Common utils",
+  "main": "main.ts",
   "repository": "https://github.com/asahiP/js-utils",
   "author": "Luke Pan <asahi0749@gmail.com>",
   "license": "MIT",
   "private": false,
   "files": [
     "LICENSE",
-    "main.d.ts",
-    "main.js",
+    "main.ts",
     "package.json",
     "README.md"
   ]
