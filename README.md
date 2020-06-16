@@ -1,2 +1,2 @@
 # js-utils
-Common personal utils
+Common utils
