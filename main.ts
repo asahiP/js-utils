@@ -250,18 +250,19 @@ export function parseQueryString (str: string): { [key: string]: string } {
     : {}
 }
 
-export function chunk<T> (array: T[], length: number): T[][] {
-  const piece = Math.floor(array.length / length)
-  const result = []
-
-  let i = 0
-  while (i <= piece) {
-    const n = i * length
-    result.push(array.slice(n, n + length))
-    i++
+export function chunk<T> (array: T[], size: number): T[][] {
+  size = Math.max(size, 0)
+  const length = array == null ? 0 : array.length
+  if (!length || size < 1) {
+    return []
   }
-
-  return result.filter(v => v.length > 0)
+  let index = 0
+  let resIndex = 0
+  const result = new Array(Math.ceil(length / size))
+  while (index < length) {
+    result[resIndex++] = array.slice(index, (index += size))
+  }
+  return result
 }
 
 /**
