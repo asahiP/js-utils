@@ -41,7 +41,9 @@ export function numToUppercase (number: string, isSimplifiedChinese = false): st
         return '零'
       }
 
-      return (_val.slice(-1) === '零' ? _val.slice(0, -1) : _val) + level[_index]
+      return _val.slice(-1) === '零'
+      ? _val.slice(0, -1) + level[_index] + '零'
+      : _val + level[_index]
     })
     .reverse()
   const _integer = intChunk.join('').replace(/零{2,}/g, '零')
@@ -57,5 +59,8 @@ export function numToUppercase (number: string, isSimplifiedChinese = false): st
     })
     .join('')
 
-  return [_integer, _decimal]
+  return [
+    _integer.slice(-1) === '零' ? _integer.slice(0, -1) : _integer,
+    _decimal
+  ]
 }

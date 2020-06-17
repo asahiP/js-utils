@@ -1,6 +1,6 @@
 {
   "name": "@asahi/utils",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Common utils",
   "main": "main.ts",
   "repository": "https://github.com/asahiP/js-utils",
