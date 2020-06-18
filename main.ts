@@ -15,6 +15,7 @@ import { random } from './lib/random'
 import { range } from './lib/range'
 import { shuffle } from './lib/shuffle'
 import { throttle } from './lib/throttle'
+import { easeInQuad, easeOutQuad, easeInOutQuad } from './lib/easing'
 
 export {
   characterRange,
@@ -32,4 +33,5 @@ export {
   range,
   shuffle,
   throttle,
+  easeInQuad, easeOutQuad, easeInOutQuad,
 }
