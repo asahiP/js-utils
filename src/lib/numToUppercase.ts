@@ -60,7 +60,7 @@ export function numToUppercase (number: string, isSimplifiedChinese = false): st
     .join('')
 
   return [
-    _integer.slice(-1) === '零' ? _integer.slice(0, -1) : _integer,
+    _integer.slice(-1) === '零' && _integer.length > 1 ? _integer.slice(0, -1) : _integer,
     _decimal
   ]
 }
